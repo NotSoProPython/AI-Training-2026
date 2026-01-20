@@ -14,7 +14,7 @@ Running = True
 Font = pygame.font.SysFont("Arial", 12)
 
 Input = np.full((32,32), 0, dtype=float)
-Model = TrainModel(id="customtest3",epochs=3,strong=False,translates=False) # Weights3 is promising
+Model = TrainModel(id="MSE3",epochs=3,strong=False,translates=False) # Weights3 is promising
 #Model = TrainModel(strong=False, weights="Convolutional Neural Network\Previous Weights\Weights100.weights.h5")
 Samples = SampleSet()
 MousePressed = 0
