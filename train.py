@@ -3,7 +3,7 @@ print("Initializing tensorflow...")
 from tensorflow.keras.models import Sequential # type:ignore
 from tensorflow.keras.layers import Conv2D, AveragePooling2D, Flatten, Dense, Softmax # type:ignore 
 import tensorflow_datasets as tfds
-from LossFunctions.MeanSquaredError import CustomLoss
+from LossFunctions.Debug import CustomLoss
 import numpy as np
 import random
 from tensorflow.python.distribute import input_lib
