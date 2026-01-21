@@ -12,6 +12,6 @@ def CustomLoss(y_true, y_pred):
     
     correct_class_probs = tf.gather_nd(y_pred, indices)
     
-    loss = tf.square(1-correct_class_probs)
+    loss = tf.exp(2*tf.square(1-correct_class_probs))-1
     
     return tf.reduce_mean(loss)
